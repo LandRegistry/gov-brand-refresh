@@ -7,8 +7,6 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
     <h1 class="govuk-heading-xl">
       {{ serviceName }}
     </h1>
@@ -19,18 +17,42 @@
     </p>
 
     <p class="govuk-body">
-    	https://github.com/alphagov/govuk-frontend/releases
+    	https://github.com/alphagov/govuk-frontend/releases <br>
     	GOV.UK Frontend v5.10.0-internal.0
-    	<code>npm install govuk-frontend@5.10.0-internal.0</code>
+    	
     </p>
 
+    <h2 class="govuk-heading-l">todo:</h2>
 		<p class="govuk-body">
-			todo:
-			<ul>
-				<li>add class to HTML element - govuk-template--rebranded</li>
+
+			<ul class="govuk-list">
+				<li>remove service name from header</li>
+				<li>add service navigation</li>
+				<li>service name to service navigation</li>
+				<li>show example LLC</li>
+				<li>link to guide of what teams need to do / write notes here for them</li>
+				<li>show what footer looks like</li>
+				<li>work out what we need to speak to Graphics team about</li>
+				<li>show example service navigation - for service with stuff in current header - sign in for example</li>
+				<li>show where language switcher goes</li>
+				<li>show where phase banner goes</li>
+				<li>any other comsiderations?  mock them up</li>
+				><li>Add a readme</li>
+				<li>heroku</li>
 			</ul>
+		</p>
+
+ 		<h2 class="govuk-heading-l">done:</h2>
+		<p class="govuk-body">
+			<ul class="govuk-list">
+				<li><code>npm install govuk-frontend@5.10.0-internal.0</code></li>
+				<li>add class to HTML element - govuk-template--rebranded, set var in template main.</li>
+			</ul>
+		</p>
+
+		<hr>
     
-    
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %} 
 
 
   </div>
