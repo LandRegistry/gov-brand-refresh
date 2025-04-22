@@ -1,0 +1,29 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
+  <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
+    <div class="govuk-header__logo" >
+      <a href="/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
+
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
+      </a>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">Header and footer</h1>
+
+<p class="govuk-body">This design is for GOV hosted services that only require a header. The header is now fully blue and only contains the GOV.UK logo which links directly to gov.uk. The footer now has blue tinted background. <br><br> This design is for service pages that have no navigation or account links.</p>
+
+{% endblock %}

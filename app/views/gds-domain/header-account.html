@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+
+{% endblock %}
+
+{% block header %}
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
+  <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
+    <div class="govuk-header__logo" >
+      <a href="/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
+
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
+      </a>
+    </div>
+  </div>
+</header>
+
+<section aria-label="Service information" class="govuk-service-navigation"
+  data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <span class="govuk-service-navigation__service-name">
+        <a href="#" class="govuk-service-navigation__link">
+          Service name
+        </a>
+      </span>
+      <nav aria-label="Menu" class="govuk-service-navigation__wrapper" style="display: flex; flex-grow: 100; align-items:end;">
+        <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
+          Menu
+        </button>
+        <ul class="govuk-service-navigation__list" id="navigation" style="margin-left:auto; display: flex; flex-wrap: wrap;">
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="./header-account-sign-out.html">
+              Sign in
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="govuk-heading-l">Header and account links</h1>
+
+<p class="govuk-body">This design is for services that have user accounts. Your service name goes in the navigation panel and if your service has a landing/home page then you can use the service name as a link to this. Account navigation to sign in and out and go to users account will go in the navigation bar aligned to the left. The content for taking users to their account page is TBC.</p>
+
+<p class="govuk-body">Use the 'Sign in' and 'Sign out' links to navigate and view the full design.</p>
+
+{% endblock %}

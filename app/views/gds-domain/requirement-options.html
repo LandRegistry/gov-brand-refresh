@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
+  <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
+    <div class="govuk-header__logo" >
+      <a href="/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
+
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
+      </a>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">Designs for services on GDS domains</h1>
+
+<p class="govuk-body">...</p>
+
+<ul class="govuk-list govuk-list">
+  <li><a href="./header.html" class="govuk-link">Header and footer only</a></li>
+  <li><a href="./header-navigation.html" class="govuk-link">Services with navigation</a></li>
+  <li><a href="./header-navigation.html" class="govuk-link">Services with user accounts</a></li>
+</ul>
+
+{% endblock %}

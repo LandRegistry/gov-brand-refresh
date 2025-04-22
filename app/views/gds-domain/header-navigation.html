@@ -1,38 +1,38 @@
-{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+{% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+
 {% endblock %}
 
 {% block header %}
 
-<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" style="background:#789904;padding-top:5px;padding-bottom:25px;border-bottom: 0px;">
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
   <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
-    <div class="govuk-header__logo" style="margin-bottom: 0px;">
-      <a href="/" class="govuk-header__link govuk-header__link--homepage">
-       
-          <img src="/public/images/greyscale-current.png" height="30px" style="padding-top: 5px;">
+    <div class="govuk-header__logo" >
+      <a href="/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
 
-        
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
       </a>
     </div>
   </div>
 </header>
 
-<div class="govuk-service-navigation"
+<section aria-label="Service information" class="govuk-service-navigation"
   data-module="govuk-service-navigation">
   <div class="govuk-width-container">
     <div class="govuk-service-navigation__container">
+      <span class="govuk-service-navigation__service-name">
+        <a href="#" class="govuk-service-navigation__link">
+          Service name
+        </a>
+      </span>
       <nav aria-label="Menu" class="govuk-service-navigation__wrapper">
         <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
           Menu
         </button>
         <ul class="govuk-service-navigation__list" id="navigation">
-          <li class="govuk-service-navigation__item">
-
-              <b>[Name of service]</b>
-  
-          </li>
           <li class="govuk-service-navigation__item">
             <a class="govuk-service-navigation__link" href="#">
               Navigation item 1
@@ -52,18 +52,15 @@
       </nav>
     </div>
   </div>
-</div>
+</section>
 
 {% endblock %}
 
 {% block content %}
 
 
-  <h1 class="govuk-heading-xl">
-    Unbranded page template
-  </h1>
-  <p class="govuk-body-l">
-    This page doesn't use New Transport or display the GOV.UK header and footer.
-  </p>
+<h1 class="govuk-heading-l">Header and basic navigation</h1>
+
+<p class="govuk-body">This design is for services that require a navigation bar. Your service name goes in the navigation panel and if it has a landing/home page then you can use the service name as a link to this.</p>
 
 {% endblock %}

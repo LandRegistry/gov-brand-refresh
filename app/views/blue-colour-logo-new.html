@@ -6,13 +6,38 @@
 
 {% block header %}
 
-<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" style="background:#1d70b8;padding-top:5px;padding-bottom:25px;border-bottom: 0px;">
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on [name of service]">
+  <div class="govuk-cookie-banner__message govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+          Cookies on [name of service]
+        </h2>
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">We use some essential cookies to make this service work.</p>
+          <p class="govuk-body">We’d also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Accept analytics cookies
+      </button>
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Reject analytics cookies
+      </button>
+      <a class="govuk-link" href="#">View cookies</a>
+    </div>
+  </div>
+</div>
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" style="background:#1d70b8;padding-top:4px;padding-bottom:24px;border-bottom: 0px;">
   <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
-    <div class="govuk-header__logo" style="margin-bottom: 5px;">
+    <div class="govuk-header__logo" style="margin-bottom: 4px;">
       <a href="/" class="govuk-header__link govuk-header__link--homepage">
 
-          <img src="/public/images/colour-logo-image.png" height="30px" style="margin-bottom:-7px;">
-          <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; display: inline-block; margin: 0; ">HM Land Registry</h1>
+          <img src="/public/images/colour-logo-image.png" height="30px" style="margin-bottom:-6px;">
+          <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; display: inline-block; margin:0; ">HM Land Registry</h1>
       
       </a>
     </div>
@@ -54,11 +79,63 @@
   </div>
 </div>
 
+<div class="govuk-width-container app-width-container">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service. Help us improve it and <a class="govuk-link" href="#">give your feedback (opens in new tab)</a>.
+      </span>
+    </p>
+  </div>
+  <div>
+    <a href="#" class="govuk-back-link" style="float: left;">Back</a>
+    <div class="language-switcher govuk-body-s" style="float: right; line-height: 1.25; margin-top:15px;">
+      English | <a class="govuk-link" href="/language/cy">Cymraeg</a>
+    </div>
+  </div>
+</div>
+
+
+
 {% endblock %}
 
 {% block content %}
 
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content">
+    <h1 class="govuk-heading-xl">New header</h1>
+  </main>
+</div>
 
+{% endblock %}
 
+{% block footer %}
+
+<footer class="govuk-footer" style="background-color: #f4f8fb">
+  <div class="govuk-width-container">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a>
+       
+
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 {% endblock %}

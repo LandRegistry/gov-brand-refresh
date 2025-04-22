@@ -1,61 +1,74 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header%}
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
+  <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
+    <div class="govuk-header__logo" >
+      <a href="/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
+
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
+      </a>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
 
 {% block content %}
 
+
+
+<h1 class="govuk-heading-xl">GOV.UK Brand Refresh</h1>
+
+<p class="govuk-body">GOV.UK is undergoing a rebrand launching with the GOVUK app on the 25th June. The GOV.UK website and Government Services running there must also change on the same day to the new brand. How does this effect us?</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-one-half" style="border-right-style: solid; border-right-color: rgb(185, 185, 185); padding-right:40px;">
+    <h2 class="govuk-heading-m">If the service, product or webpage uses a GDS domain </h2>
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
+    <p class="govuk-body">These can be identified by having one of the following in the URL:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>gov.uk/myservice</li>
+      <li>.service.gov.uk</li>
+    </ul>
+    <p class="govuk-body">For example Search for Land and Property Information</p>
+    <p class="govuk-body">We are currently putting together prototypes to illustrate the required design changes.</p>
+    <p class="govuk-body">  NOTE - this is not for production code. Service/products must use the GOV.UK Frontend.</p>
+    <p class="govuk-body">Changes must be made for 25th June</p>
+    <form action="./gds-domain/requirement-options.html">
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        View prototypes
+      </button>
+    </form>
+  </div>
 
-    <p class="govuk-body-l">
-    	Trying the govuk brand refresh pre-release code
-    	NOTE - this is not for production code.
-    </p>
-
-    <p class="govuk-body">
-    	https://github.com/alphagov/govuk-frontend/releases <br>
-    	GOV.UK Frontend v5.10.0-internal.0
-    	
-    </p>
-
-    <h2 class="govuk-heading-l">todo:</h2>
-		<p class="govuk-body">
-
-			<ul class="govuk-list">
-				<li>remove service name from header</li>
-				<li>add service navigation</li>
-				<li>service name to service navigation</li>
-				<li>show example LLC</li>
-				<li>link to guide of what teams need to do / write notes here for them</li>
-				<li>show what footer looks like</li>
-				<li>work out what we need to speak to Graphics team about</li>
-				<li>show example service navigation - for service with stuff in current header - sign in for example</li>
-				<li>show where language switcher goes</li>
-				<li>show where phase banner goes</li>
-				<li>any other comsiderations?  mock them up</li>
-				><li>Add a readme</li>
-				<li>heroku</li>
-			</ul>
-		</p>
-
- 		<h2 class="govuk-heading-l">done:</h2>
-		<p class="govuk-body">
-			<ul class="govuk-list">
-				<li><code>npm install govuk-frontend@5.10.0-internal.0</code></li>
-				<li>add class to HTML element - govuk-template--rebranded, set var in template main.</li>
-			</ul>
-		</p>
-
-		<hr>
-    
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %} 
-
-
+  <div class="govuk-grid-column-one-half" style="padding-left:40px;">
+    <h2 class="govuk-heading-m">All other domains</h2>
+    <p class="govuk-body">For example DRS, Application Processing</p>
+    <p class="govuk-body">We are currently putting together prototypes to illustrate the required design changes for external and internal facing services .</p>
+    <p class="govuk-body">  NOTE - this is not for production code. Service/products must use the GOV.UK Frontend but remove GOV.UK branding and font.</p>
+    <p class="govuk-body">Changes should be made from 25th June in a reasonable timeframe.</p>
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+      View prototypes
+    </button>
   </div>
 </div>
 
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+<h3 class="govuk-heading-m">Additional guidance</h3>
+<p class="govuk-body">
+  For more information on <a href="https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk#if-your-service-isnt-on-govuk" class="govuk-link">Making your service look like GOV.UK</a> including instructions on when your service isn't on GOV.UK.
+</p>
+<p class="govuk-body">If you are unsure of what branding or design changes your service/product needs please email <a href="mailto:grace.buttall-jensen@landregistry.gov.uk" class="govuk-link">Grace Buttall-Jensen.</a></p>
+<p class="govuk-body">Below is a graphic to demonstrate in more detail which services are subject to what design changes and our current understanding of these changes.</p>
+<img src="/public/images/which-design-change-guidance.png">
 {% endblock %}
