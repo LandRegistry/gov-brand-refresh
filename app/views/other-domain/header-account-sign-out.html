@@ -1,13 +1,12 @@
-{% extends "layouts/main.html" %}
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% block pageTitle %}
-  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
-
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
 
-<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" style="background:##0b0c0c;padding-top:5px;padding-bottom:15px;border-bottom: 0px;">
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" style="background:#1d70b8;padding-top:5px;padding-bottom:15px;border-bottom: 0px;">
   <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
     <div class="govuk-header__logo" style="margin-bottom: 5px;">
       <a href="#" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom: 7px;">  
@@ -38,7 +37,7 @@
             </a>
           </li>
           <li class="govuk-service-navigation__item">
-            <a class="govuk-service-navigation__link" href="#">
+            <a class="govuk-service-navigation__link" href="./header-account.html">
               Sign out
             </a>
           </li>
@@ -51,18 +50,26 @@
 {% endblock %}
 
 {% block content %}
-
 <h1 class="govuk-heading-l">Header and account links</h1>
 
-<p class="govuk-body">This design is for services that have user accounts. Your service name goes in the navigation panel and if your service has a landing/home page then you can use the service name as a link to this. Account navigation to sign in and out and go to users account will go in the navigation bar aligned to the left. The content for taking users to their account page is TBC.</p>
+<p class="govuk-body">This design is for services that have user accounts. Your service name goes in the navigation panel and if your service has a landing/home page then you can use the service name as a link to this. Account navigation for signing in/out and going to user accounts goes in the navigation bar, aligned right.</p>
+<p class="govuk-body">The GOV.UK Design System contains full advice on using the <a href="https://design-system.service.gov.uk/components/service-navigation/" class="govuk-link">service navigation component</a>.</p>
 
 <p class="govuk-body">Use the 'Sign in' and 'Sign out' links to navigate and view the full design.</p>
 
+<h2 class="govuk-heading-s">Design work to be confirmed</h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li>The wording for taking users to their account page.</li>
+  <li>The colour of the header, if there is not set guidance on what colour the header should be from GDS then it will be black.</li>
+  <li>If the logo should be a link to the HM Land Registry landing page.</li>
+  <li>Design for hover, focus, active and visited states of the logo if it is a link.</li>
+  <li>The colour of the footer background and top border.</li>
+</ul>
 {% endblock %}
 
 {% block footer %}
 
-<footer class="govuk-footer govuk-footer--hmlr " role="contentinfo" style="border-top: 10px solid #789904;">
+<footer class="govuk-footer govuk-footer--hmlr " role="contentinfo" style="background-color: #f4f8fb; border-top: 10px solid #1d70b8;">
   <div class="govuk-width-container ">
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">

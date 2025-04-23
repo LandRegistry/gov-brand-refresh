@@ -26,21 +26,20 @@
 
 <h1 class="govuk-heading-xl">GOV.UK Brand Refresh</h1>
 
-<p class="govuk-body">GOV.UK is undergoing a rebrand launching with the GOVUK app on the 25th June. The GOV.UK website and Government Services running there must also change on the same day to the new brand. How does this effect us?</p>
-
+<p class="govuk-body">GOV.UK is undergoing a rebrand launching with the GOVUK app on the 25th June. The GOV.UK website and Government Services running there must also change on the same day to the new brand. How does this effect us and what do we need to do?</p>
+<p class="govuk-body"><b>The first thing to do</b> is populate the <a href="https://landregistryuk-my.sharepoint.com/:x:/g/personal/grace_buttall-jensen_landregistry_gov_uk/EaQwa9IyobdKmIiVXG3KjmABgeS5PvswVG9YdLmg1Kt24A?e=1gqbBM" class="govuk-link">List of services and webpages</a> spreadsheet, in particular filling out the URL column. If there are any services, products or webpages missing please add them. With this information we can ensure each service gets the correct advice and support they need in making the design changes, particularly our external facing services that require our own branding.</p>
+<p class="govuk-body">Next, there is a guide you can use to identify where your service sits and what changes you may need to make.</p>
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half" style="border-right-style: solid; border-right-color: rgb(185, 185, 185); padding-right:40px;">
-    <h2 class="govuk-heading-m">If the service, product or webpage uses a GDS domain </h2>
-
-    <p class="govuk-body">These can be identified by having one of the following in the URL:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>gov.uk/myservice</li>
-      <li>.service.gov.uk</li>
-    </ul>
+    <h2 class="govuk-heading-m">Service, product or webpage using a GDS domain </h2>
     <p class="govuk-body">For example Search for Land and Property Information</p>
-    <p class="govuk-body">We are currently putting together prototypes to illustrate the required design changes.</p>
+
+    <p class="govuk-body">These can be identified by:</p>
+    <p class="govuk-body">If the url for the webpage is in the style of <b>gov.uk/myservice</b>. In this instance you may not need to do anything and the header and footer will update automatically. Email the URL to <a href="mailto:grace.buttall-jensen@landregistry.gov.uk" class="govuk-link">Grace Buttall-Jensen.</a> and I will be able to confirm.</p>
+    <p class="govuk-body">If the url ends with <b>.service.gov.uk</b>. In this instance service teams will need to update and apply the new branding styles. We will also need to ensure that anything in the header finds its new correct home, like the service name in the navigation bar.</p>
+    <p class="govuk-body"> We are currently putting together prototypes to illustrate the required design changes.</p>
     <p class="govuk-body">  NOTE - this is not for production code. Service/products must use the GOV.UK Frontend.</p>
     <p class="govuk-body">Changes must be made for 25th June</p>
     <form action="./gds-domain/requirement-options.html">
@@ -51,14 +50,17 @@
   </div>
 
   <div class="govuk-grid-column-one-half" style="padding-left:40px;">
-    <h2 class="govuk-heading-m">All other domains</h2>
-    <p class="govuk-body">For example DRS, Application Processing</p>
+    <h2 class="govuk-heading-m">All other domains, external customer facing and internal</h2>
+    <p class="govuk-body">For example Mantain LLC, DRS, Application Processing</p>
+    <p class="govuk-body">We will want to make design changes to our header and footer to keep a consistent feel across government services. This may have a knock on effect to our navigation and other components such as phase banners, Welsh language toggle, etc. These service want to look like GOV.UK but must not use their branding.</p>
     <p class="govuk-body">We are currently putting together prototypes to illustrate the required design changes for external and internal facing services .</p>
     <p class="govuk-body">  NOTE - this is not for production code. Service/products must use the GOV.UK Frontend but remove GOV.UK branding and font.</p>
-    <p class="govuk-body">Changes should be made from 25th June in a reasonable timeframe.</p>
-    <button type="submit" class="govuk-button" data-module="govuk-button">
-      View prototypes
-    </button>
+    <p class="govuk-body">Changes should be made from 25th June in a reasonable timeframe with our external facing services taking priority.</p>
+    <form action="./other-domain/requirement-options.html"> 
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        View prototypes
+      </button>
+    </form> 
   </div>
 </div>
 
