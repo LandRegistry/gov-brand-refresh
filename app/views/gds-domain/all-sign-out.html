@@ -1,0 +1,110 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+
+{% endblock %}
+
+{% block header %}
+
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on [name of service]">
+  <div class="govuk-cookie-banner__message govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+          Cookies on [name of service]
+        </h2>
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">We use some essential cookies to make this service work.</p>
+          <p class="govuk-body">We’d also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Accept analytics cookies
+      </button>
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Reject analytics cookies
+      </button>
+      <a class="govuk-link" href="#">View cookies</a>
+    </div>
+  </div>
+</div>
+
+<header class="govuk-header" data-module="govuk-header" data-govuk-header-init="" >
+  <div class="govuk-header__container govuk-width-container" style="border-bottom:0px;">
+    <div class="govuk-header__logo" >
+      <a href="https://www.gov.uk/" class="govuk-header__link govuk-header__link--homepage" style="padding-bottom:2px;">
+
+          <img src="/public/images/govuk-logo.png" height="32px" style="margin-top: -4px;;">
+      
+      </a>
+    </div>
+  </div>
+</header>
+
+<section aria-label="Service information" class="govuk-service-navigation"
+  data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <span class="govuk-service-navigation__service-name">
+        <a href="#" class="govuk-service-navigation__link">
+          Service name
+        </a>
+      </span>
+      <nav aria-label="Menu" class="govuk-service-navigation__wrapper" style="display: flex; flex-grow: 100; align-items:end;">
+        <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
+          Menu
+        </button>
+        <ul class="govuk-service-navigation__list" id="navigation" style="margin-left:auto; display: flex; flex-wrap: wrap;">
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="#">
+              Manage/My account TBC
+            </a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="./all-sign-in.html">
+              Sign out
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="govuk-width-container app-width-container">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service. Help us improve it and <a class="govuk-link" href="#">give your feedback (opens in new tab)</a>.
+      </span>
+    </p>
+  </div>
+  <div>
+    <a href="#" class="govuk-back-link" style="float: left;">Back</a>
+    <div class="language-switcher govuk-body-s" style="float: right; line-height: 1.25; margin-top:15px;">
+      English | <a class="govuk-link" href="/language/cy">Cymraeg</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content"> 
+    <h1 class="govuk-heading-l">Header and basic navigation</h1>
+
+    <p class="govuk-body">This design is for services that require a navigation bar. Your service name goes in the navigation panel and if it has a landing/home page then you can use the service name as a link to this.</p>
+    <p class="govuk-body">The GOV.UK Design System contains full advice on using the <a href="https://design-system.service.gov.uk/components/service-navigation/" class="govuk-link">service navigation component</a>.</p>
+  </main>
+</div>
+    {% endblock %}
