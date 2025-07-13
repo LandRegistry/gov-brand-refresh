@@ -48,19 +48,24 @@
   data-module="govuk-service-navigation">
   <div class="govuk-width-container">
     <div class="govuk-service-navigation__container">
-      <span class="govuk-service-navigation__service-name" style="padding-top: 18px;">
-        <a href="#" class="govuk-service-navigation__link">
-          Service name
+      <span class="govuk-service-navigation__service-name" style="padding-top:18px">
+        <a href="https://use-land-property-data.service.gov.uk/" class="govuk-service-navigation__link">
+          Use land and property data
         </a>
       </span>
-      <nav aria-label="Menu" class="govuk-service-navigation__wrapper" style="display: flex; flex-grow: 100; align-items:end;">
+      <nav aria-label="Menu" class="govuk-service-navigation__wrapper" style="display: flex; flex-grow: 100; align-items:end; padding-top: 3px;">
         <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
           Menu
         </button>
-        <ul class="govuk-service-navigation__list" id="navigation" style="margin-left:auto; display: flex; flex-wrap: wrap; padding-top:3px">
+        <ul class="govuk-service-navigation__list" id="navigation" style="margin-left:auto; display: flex; flex-wrap: wrap;">
           <li class="govuk-service-navigation__item">
-            <a class="govuk-service-navigation__link" href="./all-sign-out.html">
+            <a class="govuk-service-navigation__link" href="./ulap-sign-out.html">
               Sign in
+            </a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="./ulap-sign-out.html">
+              Create an account
             </a>
           </li>
         </ul>
@@ -83,7 +88,7 @@
     </p>
   </div>
   <div>
-    <a href="../index.html" class="govuk-back-link" style="float: left;">Back</a>
+ 
     <div class="language-switcher govuk-body-s" style="float: right; line-height: 1.25; margin-top:15px;">
       English | <a class="govuk-link" href="/language/cy">Cymraeg</a>
     </div>
@@ -96,33 +101,18 @@
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content"> 
-    <h1 class="govuk-heading-l">Template for citizen services</h1>
-
+    <h1 class="govuk-heading-l">Use land and property data rebrand design</h1>
     <p class="govuk-body">  NOTE - this is not for production code. Service/products must use the GOV.UK Frontend.</p>
-
-    <p class="govuk-body">This template shows all possible components that might be included in our citizen facing services that use GOV.UK branding.</p>
-    <p class="govuk-body">Here is a list of all the components included and any design rationale:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/cookie-banner/" class="govuk-link">Cookie banner</a></li>
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/header/" class="govuk-link">GOV.UK header</a>, now only containing the Crown logo and GOV.UK wordmark. The only exception to this is GOV One Login links as this is a global element spanning lots of services rather than service specific.</li>
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/service-navigation/" class="govuk-link">service navigation</a>, where the service name now sits. Our citizen facing services on GOV.UK don't contain any navigation links which is why this design doesn't show them. Some however, do have account links. As they are service level accounts they also sit in the navigation component, aligned right.</li>
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/phase-banner/" class="govuk-link">Phase banner</a></li>
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/service-navigation/" class="govuk-link">Welsh language toggle</a>, there is no set guidance where this should go. It can be put in the service navigation but this looks crowded and is a translation option rather than navigation. The other suitable place is in the main page just above the main content. This has already proven successful in our services and is placed here in many other Government services. Moreover when viewing services on a mobile device the toggle reamins visbile whereas if it were in the service navigation it would become hidden in the collapsed menu.</li>
-      <li class="govuk-body"><a href="https://design-system.service.gov.uk/components/footer/" class="govuk-link">GOV.UK footer</a>, now using a light blue background colour, a thick blue top border and a small crown logo, in addition to the existing coat of arms.</li>
-    </ul>
-
+<p class="govuk-body">The service name now goes in the navigation panel and links to the service landing page. Account navigation for signing in/out and access to user accounts goes in the navigation bar, aligned right.</p>
+<p class="govuk-body">The GOV.UK Design System contains full advice on using the <a href="https://design-system.service.gov.uk/components/service-navigation/" class="govuk-link">service navigation component</a>.</p>
+<p class="govuk-body">For more information on component changes see the <a href="../gds-domain/all-sign-in.html" class="govuk-link">template</a>.</p>
 <p class="govuk-body">Use the 'Sign in' and 'Sign out' links to navigate and view the full design.</p>
 
-<h2 class="govuk-heading-s">Design work to be confirmed</h2>
-<ul class="govuk-list govuk-list--bullet">
-  <li>The wording for taking users to their account. These are currently different across our services but not with a simple solution for how they could be the same. This is something that could be investigated in the future but for now our services are keeping their current wording.</li>
-</ul>
+
 
 
 </main>
 </div>
-
-
     {% endblock %}
 
     {% block footer %}
@@ -183,4 +173,5 @@
     </footer>
 
     {% endblock %}
+
 
